@@ -1,0 +1,25 @@
+.section{
+  overflow-y: auto;
+  .bannerCon{
+    height: 162px;
+    background: #ffffff;
+    margin-bottom: 10px;
+    img{
+      width: 94%;
+      height: 96px;
+      margin-left: 3%;
+      padding-top: 8px;
+    }
+    h4{
+      padding-left: 10px;
+      font-size: 15px;
+      padding-top: 8px;
+      padding-bottom: 3px;
+    }
+    p{
+      padding-left: 10px;
+      font-size: 12px;
+      padding-top: -2px;
+    }
+  }
+}

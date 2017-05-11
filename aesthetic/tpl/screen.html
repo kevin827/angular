@@ -1,0 +1,11 @@
+<div class="screen">
+    <ol class="screen-items">
+        <li ng-click="item('all',0)">全部服务</li>
+        <li ng-repeat="x in list" ng-click="item(x.msg,$index+1)">{{x.msg}}</li>
+    </ol>
+    <div class="screen-content">
+        <ol>
+            <li ng-repeat="x in items |screenList:flag">{{x.c}}</li>
+        </ol>
+    </div>
+</div>

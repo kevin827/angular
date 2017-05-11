@@ -1,0 +1,167 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  display: flex;
+  -webkit-flex-direction: column;
+  background: #ffffff; }
+
+div[ui-view] {
+  display: flex;
+  -webkit-flex-direction: column;
+  -webkit-flex: 1; }
+
+.header {
+  height: 44px;
+  background: #ed5858;
+  color: #ffffff;
+  font-size: 18px;
+  position: relative; }
+  .header div {
+    position: absolute;
+    left: 50%;
+    margin-left: -41px;
+    top: 5px; }
+    .header div img {
+      width: 28px;
+      height: 28px;
+      padding-right: 6px;
+      float: left; }
+    .header div span {
+      float: left;
+      padding-top: 5px; }
+  .header i {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    font-size: 22px; }
+
+.section {
+  -webkit-flex: 1;
+  overflow-y: auto; }
+  .section .banner {
+    width: 100%;
+    height: 120px; }
+    .section .banner img {
+      width: 100%;
+      height: 120px; }
+  .section .benefit {
+    height: 51px;
+    margin-top: 13px;
+    margin-bottom: 6px; }
+    .section .benefit .benefitCon {
+      display: flex;
+      text-align: center; }
+      .section .benefit .benefitCon li {
+        width: 50%;
+        border-right: 1px solid #ccc;
+        font-size: 14px; }
+        .section .benefit .benefitCon li p:nth-child(2) {
+          color: #ed5858; }
+          .section .benefit .benefitCon li p:nth-child(2) span {
+            font-size: 16px;
+            font-weight: bold; }
+        .section .benefit .benefitCon li:nth-child(2) {
+          border-right: none; }
+  .section .content {
+    height: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 10px; }
+    .section .content .cash {
+      width: 94%;
+      margin-left: 3%;
+      background: #e5f6ff;
+      height: 113px;
+      margin-bottom: 10px; }
+      .section .content .cash ul {
+        display: flex;
+        position: relative;
+        margin-bottom: 12px; }
+        .section .content .cash ul li img {
+          width: 75px;
+          height: 26px; }
+        .section .content .cash ul li:nth-child(2) {
+          position: absolute;
+          top: 3px;
+          right: 10px;
+          font-size: 14px;
+          color: #aaaaaa; }
+    .section .content .cash_content {
+      display: flex;
+      position: relative; }
+      .section .content .cash_content p {
+        font-size: 18px;
+        color: #ff8800; }
+        .section .content .cash_content p span {
+          font-size: 48px; }
+        .section .content .cash_content p:nth-child(2) {
+          font-size: 14px;
+          color: #aaaaaa;
+          position: absolute;
+          left: 20%; }
+      .section .content .cash_content dl {
+        display: flex;
+        text-align: center;
+        -webkit-flex-direction: column; }
+        .section .content .cash_content dl dt {
+          font-size: 14px;
+          color: #aaaaaa; }
+          .section .content .cash_content dl dt img {
+            width: 43px;
+            height: 43px; }
+        .section .content .cash_content dl dd {
+          font-size: 14px;
+          color: #aaaaaa; }
+          .section .content .cash_content dl dd span {
+            color: #000;
+            font-size: 29px; }
+        .section .content .cash_content dl:nth-child(3) {
+          position: absolute;
+          left: 50%;
+          margin-left: -18px; }
+        .section .content .cash_content dl:nth-child(4) {
+          position: absolute;
+          right: 10px; }
+    .section .content .stream {
+      width: 94%;
+      margin-left: 3%;
+      background: #fffde0;
+      height: 113px;
+      margin-bottom: 10px; }
+      .section .content .stream ul {
+        display: flex;
+        position: relative;
+        margin-bottom: 12px; }
+        .section .content .stream ul li img {
+          width: 75px;
+          height: 26px; }
+        .section .content .stream ul li:nth-child(2) {
+          position: absolute;
+          top: 3px;
+          right: 10px;
+          font-size: 14px;
+          color: #aaaaaa; }
+
+.footer {
+  width: 100%;
+  height: 49px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  text-align: center;
+  background: #f7f7f7; }
+  .footer a {
+    -webkit-flex: 1; }
+    .footer a span {
+      font-size: 22px;
+      padding-top: 3px; }
+    .footer a p {
+      padding-top: 3px; }
+  .footer .active {
+    border-top: 1px solid #ED5858; }
+    .footer .active span {
+      color: #ED5858; }
+    .footer .active p {
+      color: #ED5858; }
+
+/*# sourceMappingURL=style.css.map */

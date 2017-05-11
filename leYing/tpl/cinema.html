@@ -1,0 +1,37 @@
+<div class="list" ng-show="regionListshow || brandslistshow">
+        <ul>
+            <li ng-repeat="m in country" ng-show="regionListshow" ng-click="area(m.nickname)">{{m.nickname}}</li>
+        </ul>
+        <ul>
+            <li ng-repeat="m in brands" ng-show="brandslistshow" ng-click="area(m.name)">{{m.name}}</li>
+        </ul>
+    </div>
+<header class="header">
+        <a ng-href="entry.html#/movie">
+            <i class="icon iconfont icon-iconfontarrleft"></i>
+        </a>
+    电影院
+    <span class="mine">
+        <i class="icon iconfont icon-wo"></i>
+    </span>
+    </header>
+<section class="section part">
+    <nav class="navCon">
+        <ul class="Oul">
+            <li ng-click="town()">
+                <span>全部城区</span>
+                <i class="icon iconfont icon-xiajiantou"></i>
+            </li>
+            <li ng-click="brand()">
+                <span>全部品牌</span>
+                <i class="icon iconfont icon-xiajiantou"></i>
+            </li>
+        </ul>
+    </nav>
+    <div class="cinemaCn" ng-repeat="i in data | filter:filterName" >
+        <h2>{{i.brandName}}</h2>
+        <p>{{i.address}}</p>
+        <p class="part">{{i.featuresType}}</p>
+    </div>
+</section>
+<footer class="foot">点击定位</footer>

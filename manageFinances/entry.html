@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <title>首页</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/creditor.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/more.css">
+</head>
+<body ng-app="app">
+<!--公共入口-->
+    <div ui-view></div>
+<!--脚本-->
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script>
+        //点击事件，显示遮罩层和菜单栏
+        $("body").on("click",".head .list",function(){
+            $(".black").fadeIn(300);
+            $(".select").fadeIn(300);
+        })
+        $("body").on("click",".black",function(){
+            $(".black").fadeOut(300);
+            $(".select").fadeOut(300);
+        })
+    </script>
+</body>
+</html>

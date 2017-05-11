@@ -1,0 +1,33 @@
+.more {
+  height: 44px;
+  line-height: 44px;
+  text-align: center; }
+
+.main {
+  background: #eeeeee; }
+
+.section .news, .section .earthwork {
+  height: 44px;
+  line-height: 44px;
+  background: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px; }
+  .section .news i, .section .earthwork i {
+    padding-left: 18px;
+    font-size: 20px;
+    padding-right: 10px; }
+.section .mine {
+  margin-bottom: 10px; }
+  .section .mine li {
+    height: 44px;
+    line-height: 44px;
+    background: #ffffff;
+    font-size: 15px;
+    border-bottom: 1px solid #ccc; }
+    .section .mine li i {
+      padding-left: 18px;
+      font-size: 18px;
+      padding-right: 10px; }
+
+/*# sourceMappingURL=more.css.map */

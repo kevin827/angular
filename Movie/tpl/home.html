@@ -1,0 +1,20 @@
+<header class="header">
+    {{major}}
+        <span ng-click="search()">
+            <i class="icon iconfont icon-sousuo_sousuo"></i>
+        </span>
+    <i class="icon iconfont icon-caidan"></i>
+</header>
+<div class="black" ng-show="black"></div>
+<div class="searchCon" ng-show="searchC">
+    <input type="search" placeholder="输入视频名称或主演" ng-model="filterSearch">
+    <button>搜索</button>
+</div>
+<div ui-view></div>
+
+<footer class="footer">
+    <span ui-sref="home.index" ui-sref-active="on">首页</span>
+    <span ui-sref="home.stock" ui-sref-active="on">片库</span>
+    <span ui-sref="home.leaveLoad" ui-sref-active="on">离线下载</span>
+    <span ui-sref="home.personal" ui-sref-active="on">个人中心</span>
+</footer>

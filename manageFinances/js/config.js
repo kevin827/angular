@@ -1,0 +1,113 @@
+/**
+ * Created by lenovo on 2017/3/24.
+ */
+var app=angular.module("app");
+//单选多选按钮
+app.run(function($rootScope){
+    $rootScope.check=0;
+    $rootScope.radio=0;
+    $rootScope.all=function(){
+        if($rootScope.check==0){
+            $rootScope.check=1;
+            $rootScope.radio=1;
+        }else{
+            $rootScope.check=0;
+            $rootScope.radio=0;
+        }
+    }
+    $rootScope.single=function(){
+        if($rootScope.radio==0){
+            $rootScope.radio=1
+        }else{
+            $rootScope.radio=0;
+        }
+    }
+    /*$rootScope.flag=false;
+    $rootScope.hide=function(){
+        $rootScope.flag=false;
+    }
+    $rootScope.toggle=function(){
+        $rootScope.flag=!$rootScope.flag;
+    }*/
+})
+//swiper轮播
+app.directive("swiper",function($timeout){
+    return{
+        restrict:"ACEM",
+        templateUrl:"tpl/img.html",
+        replace:true,
+        scope:{
+            imgData:"="
+        },
+        controller:function($scope){
+
+        },
+        link:function(scope,ele,attr){
+            $timeout(function(){
+                new Swiper(".swiper-container",{
+                    autoplay:1000,
+                    loop:true
+                })
+            },0)
+        }
+    }
+})
+app.controller("bannerImg",function($scope){
+    $scope.list=[
+        {img:"images/banner.png"},
+        {img:"images/banner.png"},
+        {img:"images/banner.png"},
+        {img:"images/banner.png"}
+    ]
+})
+//路由配置
+app.config(function($stateProvider,$urlRouterProvider){
+        $urlRouterProvider.otherwise("home/index");
+        $urlRouterProvider.when("/home/creditor","home/creditor/credit")
+        $stateProvider
+            .state("home",{
+                url:"/home",
+                templateUrl:"tpl/home.html"
+            })
+            .state("home.index",{
+                url:"/index",
+                templateUrl:"tpl/index.html"
+            })
+            .state("home.creditor",{
+                url:"/creditor",
+                templateUrl:"tpl/creditor.html"
+            })
+            .state('home.creditor.credit',{
+                url:'/credit',
+                templateUrl:'tpl/credit.html',
+                resolve:{
+                    data:function($http){
+                        return $http.get('server/credit.json')
+                    }
+                },
+                controller:function(data,$scope){
+                    $scope.data = data.data.data.list;
+                }
+            })
+            .state('home.creditor.fund',{
+                url:'/fund',
+                templateUrl:'tpl/fund.html',
+                resolve:{
+                    data:function($http){
+                        return $http.get('server/fund.json')
+                    }
+                },
+                controller:function(data,$scope){
+                    $scope.data = data.data.data.list;
+                }
+            })
+            .state("home.login",{
+                url:"/login",
+                templateUrl:"tpl/login.html"
+            })
+            .state("home.more",{
+                url:"/more",
+                templateUrl:"tpl/more.html"
+            })
+    })
+

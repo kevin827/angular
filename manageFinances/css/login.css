@@ -1,0 +1,56 @@
+.headContent {
+  height: 175px;
+  background: #ed5858;
+  text-align: center; }
+  .headContent img {
+    width: 84px;
+    height: 84px;
+    padding-top: 10px; }
+  .headContent ul {
+    display: flex;
+    text-align: center;
+    padding-top: 15px; }
+    .headContent ul li {
+      width: 50%;
+      height: 40px; }
+      .headContent ul li button {
+        width: 130px;
+        height: 40px;
+        font-size: 18px;
+        background: #ffbb00;
+        border: 1px solid #ffbb00;
+        border-radius: 5px;
+        color: #ffffff; }
+      .headContent ul li:nth-child(2) button {
+        border: 1px solid #fff;
+        background: #ed5858; }
+
+.section .navContent {
+  display: flex;
+  text-align: center;
+  height: 100px;
+  border-bottom: 1px solid #ccc; }
+  .section .navContent dl {
+    -webkit-flex: 1;
+    padding-top: 20px; }
+    .section .navContent dl dt img {
+      width: 40px;
+      height: 40px; }
+    .section .navContent dl dd {
+      font-size: 15px; }
+.section .Oul li {
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  position: relative; }
+  .section .Oul li i {
+    padding-left: 22px;
+    padding-right: 10px;
+    font-size: 20px; }
+  .section .Oul li span {
+    position: absolute;
+    right: 5px;
+    color: #aaaaaa; }
+
+/*# sourceMappingURL=login.css.map */

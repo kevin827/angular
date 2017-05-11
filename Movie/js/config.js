@@ -1,0 +1,69 @@
+/**
+ * Created by lenovo on 2017/4/5.
+ */
+var app=angular.module("app");
+app.directive("hotContent",function(){
+    return{
+        templateUrl:"tpl/hotContent.html",
+        scope:{
+            hotCont:"="
+        },
+        controller:function(){
+
+        }
+    }
+})
+app.run(function($rootScope){
+    $rootScope.major="首页"
+    $rootScope.data=[
+        {
+            img:"images/1.png",
+            title:"陆贞传奇",
+            description:"讲述了北齐王朝女官...",
+        },
+        {
+            img:"images/2.png",
+            title:"大笑江湖",
+            description:"讲述了北齐王朝女官...",
+        },
+        {
+            img:"images/3.png",
+            title:"恋空",
+            description:"讲述了北齐王朝女官...",
+        },
+        {
+            img:"images/4.png",
+            title:"继承者们",
+            description:"讲述了北齐王朝女官...",
+        }
+    ]
+    $rootScope.search=function(){
+        $rootScope.major="搜索"
+        $rootScope.black=!$rootScope.black
+        $rootScope.searchC=!$rootScope.searchC
+    }
+})
+app.config(function($stateProvider,$urlRouterProvider){
+    $urlRouterProvider.otherwise("home/index")
+    $stateProvider
+        .state("home",{
+            url:"/home",
+            templateUrl:"tpl/home.html"
+        })
+        .state("home.index",{
+            url:"/index",
+            templateUrl:"tpl/index.html"
+        })
+        .state("home.stock",{
+            url:"/stock",
+            templateUrl:"tpl/stock.html"
+        })
+        .state("home.leaveLoad",{
+            url:"/leaveLoad",
+            templateUrl:"tpl/leaveLoad.html"
+        })
+        .state("home.personal",{
+            url:"/personal",
+            templateUrl:"tpl/personal.html"
+        })
+})

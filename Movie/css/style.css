@@ -1,0 +1,137 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  display: flex;
+  -webkit-flex-direction: column;
+  background: #e7e4e4; }
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  background: #333333;
+  font-size: 18px;
+  position: relative; }
+  .header i {
+    position: absolute;
+    right: 10px;
+    font-size: 22px;
+    top: 2px; }
+  .header span {
+    position: absolute;
+    right: 35px; }
+
+div[ui-view] {
+  display: flex;
+  -webkit-flex-direction: column;
+  -webkit-flex: 1; }
+
+.black {
+  width: 100%;
+  height: auto;
+  background: #000000;
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  bottom: 0;
+  z-index: 10; }
+
+.searchCon {
+  width: 96%;
+  margin-left: 2%;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  top: 44px;
+  z-index: 100; }
+  .searchCon input {
+    width: 90%; }
+  .searchCon button {
+    width: 60px;
+    background: #336699;
+    color: #ffffff;
+    border: none; }
+
+.section {
+  -webkit-flex: 1;
+  overflow-y: auto; }
+  .section .banner img {
+    width: 100%;
+    height: 127px; }
+  .section h2 {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 8px;
+    border-bottom: 1px solid #cccccc; }
+
+.hotContent {
+  margin-top: 6px;
+  width: 96%;
+  height: auto;
+  margin-left: 2%;
+  display: flex; }
+
+.left {
+  width: 48%;
+  height: auto;
+  margin-right: 2%; }
+  .left dl {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 6px;
+    background: #ffffff; }
+    .left dl dt img {
+      width: 94%;
+      height: 98px;
+      margin-left: 3%;
+      margin-top: 3%; }
+    .left dl dd {
+      padding-left: 3%; }
+      .left dl dd h3 {
+        padding-top: 6px;
+        font-size: 13px; }
+
+.right {
+  width: 48%;
+  height: auto;
+  margin-left: 2%; }
+  .right dl {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 6px;
+    background: #ffffff; }
+    .right dl dt img {
+      width: 94%;
+      height: 98px;
+      margin-left: 3%;
+      margin-top: 3%; }
+    .right dl dd {
+      padding-left: 3%; }
+      .right dl dd h3 {
+        padding-top: 6px;
+        font-size: 13px; }
+
+.footer {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  background: #333333;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center; }
+  .footer span {
+    display: inline-block;
+    padding-left: 8%; }
+    .footer span:nth-child(1) {
+      padding-left: 1%; }
+
+.on {
+  color: #336699; }
+
+/*# sourceMappingURL=style.css.map */

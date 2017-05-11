@@ -1,0 +1,162 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  display: flex;
+  -webkit-flex-direction: column; }
+
+.black {
+  width: 100%;
+  height: 92%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 44px;
+  display: none;
+  z-index: 1; }
+
+.select {
+  width: 100%;
+  height: 220px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 44px;
+  display: none;
+  z-index: 100; }
+  .select ul li {
+    height: 43px;
+    line-height: 43px;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px; }
+    .select ul li i {
+      padding-left: 20px;
+      padding-right: 10px;
+      font-size: 20px; }
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #ed5858;
+  color: #ffffff;
+  font-size: 18px;
+  position: relative; }
+  .header i {
+    position: absolute;
+    right: 12px;
+    top: 16px; }
+
+.section {
+  -webkit-flex: 1;
+  overflow: auto; }
+  .section .nav ul {
+    display: flex;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; }
+    .section .nav ul li {
+      width: 50%;
+      border-right: 1px solid #ccc;
+      font-size: 15px; }
+      .section .nav ul li:nth-child(2) a {
+        color: #ed5858; }
+      .section .nav ul li:nth-child(2) {
+        border-right: none; }
+  .section .content {
+    height: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 10px; }
+    .section .content .cash {
+      height: 113px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc; }
+      .section .content .cash h3 {
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        padding-left: 15px;
+        font-weight: normal; }
+        .section .content .cash h3 span {
+          color: #aaaaaa; }
+    .section .content .cash_content {
+      display: flex;
+      position: relative; }
+      .section .content .cash_content p {
+        padding-left: 10px;
+        font-size: 18px;
+        color: #ff8800; }
+        .section .content .cash_content p span {
+          font-size: 48px; }
+        .section .content .cash_content p:nth-child(2) {
+          font-size: 14px;
+          color: #aaaaaa;
+          position: absolute;
+          left: 21%; }
+      .section .content .cash_content dl {
+        display: flex;
+        text-align: center;
+        -webkit-flex-direction: column; }
+        .section .content .cash_content dl dt {
+          font-size: 14px;
+          color: #aaaaaa; }
+          .section .content .cash_content dl dt img {
+            width: 43px;
+            height: 43px; }
+        .section .content .cash_content dl dd {
+          font-size: 14px;
+          color: #aaaaaa; }
+          .section .content .cash_content dl dd span {
+            color: #000;
+            font-size: 20px; }
+          .section .content .cash_content dl dd b {
+            color: #ed5858; }
+        .section .content .cash_content dl:nth-child(3) {
+          position: absolute;
+          left: 50%;
+          margin-left: -18px; }
+        .section .content .cash_content dl:nth-child(4) {
+          position: absolute;
+          right: 10px; }
+    .section .content .stream {
+      width: 94%;
+      margin-left: 3%;
+      background: #fffde0;
+      height: 113px;
+      margin-bottom: 10px; }
+      .section .content .stream ul {
+        display: flex;
+        position: relative;
+        margin-bottom: 12px; }
+        .section .content .stream ul li img {
+          width: 75px;
+          height: 26px; }
+        .section .content .stream ul li:nth-child(2) {
+          position: absolute;
+          top: 3px;
+          right: 10px;
+          font-size: 14px;
+          color: #aaaaaa; }
+
+.footer {
+  width: 100%;
+  height: 49px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  text-align: center;
+  background: #f7f7f7; }
+  .footer a {
+    -webkit-flex: 1; }
+    .footer a span img {
+      width: 20px;
+      height: 21px;
+      padding-top: 3px; }
+    .footer a p {
+      padding-top: 3px; }
+    .footer a:nth-child(2) {
+      color: #ed5858;
+      border-top: 1px solid #ed5858; }
+
+/*# sourceMappingURL=creditorProduct.css.map */

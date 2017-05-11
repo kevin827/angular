@@ -1,0 +1,38 @@
+.more{
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+.main{
+  background: #eeeeee;
+}
+.section{
+  .news,.earthwork{
+    height: 44px;
+    line-height: 44px;
+    background: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    i{
+      padding-left: 18px;
+      font-size: 20px;
+      padding-right: 10px;
+    }
+  }
+  .mine{
+    margin-bottom: 10px;
+    li{
+      height: 44px;
+      line-height: 44px;
+      background: #ffffff;
+      font-size: 15px;
+      border-bottom: 1px solid #ccc;
+      i{
+        padding-left: 18px;
+        font-size: 18px;
+        padding-right: 10px;
+      }
+    }
+  }
+}

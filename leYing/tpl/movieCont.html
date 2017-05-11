@@ -1,0 +1,17 @@
+<div class="moveContent" ng-repeat="x in movieCont">
+    <dl>
+        <dt><img ng-src="{{x.img}}" alt=""></dt>
+        <dd>
+            <p>
+                <b>{{x.title}}</b>
+                <span>{{x.news}}</span>
+                <span>{{x.stamp}}</span>
+                <span>{{x.screen}}</span>
+                <span class="score">{{x.score}}</span>
+            </p>
+            <p class="second">{{x.drama}}</p>
+            <p class="third">{{x.status}}</p>
+            <button>{{x.btn}}</button>
+        </dd>
+    </dl>
+</div>

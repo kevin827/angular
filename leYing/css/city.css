@@ -1,0 +1,82 @@
+.header {
+  height: 44px;
+  line-height: 44px;
+  background: #dd3231;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  position: relative; }
+  .header .icon-iconfontarrleft {
+    font-size: 22px;
+    position: absolute;
+    left: 10px; }
+
+.section {
+  background: #e9e9e9;
+  position: relative; }
+  .section .search {
+    height: 44px;
+    background: #c7c7cc;
+    overflow: hidden; }
+    .section .search input {
+      width: 94%;
+      margin-left: 2%;
+      height: 28px;
+      border-radius: 5px;
+      margin-top: 7px;
+      border: none;
+      padding-left: 8px; }
+  .section .op {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 12px; }
+  .section .positionCity {
+    height: 50px;
+    background: #f2f2f2; }
+    .section .positionCity span {
+      width: 50px;
+      height: 25px;
+      display: inline-block;
+      text-align: center;
+      line-height: 25px;
+      background: #ffffff;
+      font-size: 15px;
+      margin-top: 13px;
+      margin-left: 10px; }
+  .section .cityContent .op {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 12px; }
+  .section .cityContent ul {
+    height: auto;
+    background: #f2f2f2;
+    padding-left: 10px; }
+    .section .cityContent ul li {
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #ccc;
+      font-size: 15px; }
+  .section ol, .section em {
+    width: 30px;
+    height: auto;
+    line-height: 22px;
+    font-size: 13px;
+    text-align: center;
+    position: fixed;
+    right: 3px;
+    top: 126px; }
+  .section em {
+    position: fixed;
+    top: 88px;
+    line-height: 18px;
+    font-style: normal; }
+
+.city_list {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 12px; }
+
+/*# sourceMappingURL=city.css.map */

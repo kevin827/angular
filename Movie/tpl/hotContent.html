@@ -1,0 +1,20 @@
+<div class="hotContent"  ng-repeat="x in hotCont | filter:filterSearch">
+    <div class="left">
+        <dl>
+            <dt><img ng-src="{{x.img}}" alt=""></dt>
+            <dd>
+                <h3>{{x.title}}</h3>
+                <p>{{x.description}}</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="right">
+        <dl>
+            <dt><img ng-src="{{x.img}}" alt=""></dt>
+            <dd>
+                <h3>{{x.title}}</h3>
+                <p>{{x.description}}</p>
+            </dd>
+        </dl>
+    </div>
+</div>

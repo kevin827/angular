@@ -1,0 +1,36 @@
+<div class="black" ng-show="blackPage"></div>
+<header class="header">
+    <a href="#/home/shopIntroduct">
+        <i class="icon iconfont icon-arrowleft"></i>
+    </a>
+    服务列表
+    <i class="icon iconfont icon-icons16"></i>
+</header>
+<section class="section">
+    <nav class="nav">
+        <ul>
+            <li ng-click="filterService()">
+                <span ng-click="screener()" ng-class="flag">筛选服务</span>
+                <i class="icon iconfont icon-arrow-down"></i>
+            </li>
+            <li ng-click="order()">
+                <span ng-click="reorder()">综合排序</span>
+                <i class="icon iconfont icon-arrow-down"></i>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <screen list="data" items="items" ng-hide="screenHide"></screen>
+        <reorder ng-hide="orderHide" ng-class="orderContent"></reorder>
+    </div>
+    <div class="productList" ng-repeat="x in list | orderBy:sign">
+        <p>
+            <b>{{x.title}}</b>
+            <span>{{x.price}}</span>
+        </p>
+        <p class="Op">
+            <em>{{x.nickName}}</em>
+            <button>{{x.btn}}</button>
+        </p>
+    </div>
+</section>

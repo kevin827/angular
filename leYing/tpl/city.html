@@ -1,0 +1,28 @@
+<header class="header">
+    <a ng-href="entry.html#/movie">
+        <i class="icon iconfont icon-iconfontarrleft"></i>
+    </a>
+    定位城市
+</header>
+<section class="section">
+    <em>定位热门</em>
+    <ol>
+        <li ng-repeat="(key,val) in data" ng-click="scrollTo(key)">
+            {{key}}
+        </li>
+    </ol>
+    <div class="search">
+        <input type="text" placeholder="搜索列表" ng-model="filterSearch">
+    </div>
+    <p class="op">定位城市</p>
+    <div class="positionCity">
+        <span>北京</span>
+    </div>
+    <p class="op">热门城市</p>
+    <div class="cityContent" ng-repeat="(key,val) in data">
+        <p class="city_list">{{key}}</p>
+        <ul ng-repeat="(m,n) in val | filter:filterSearch">
+            <li ng-repeat="(a,b) in n">{{b.name}}</li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+<div class="black"></div>
+<div class="select">
+    <ul>
+        <li><i ng-class="['icon iconfont icon-radio','icon iconfont icon-tahz-'][check]" ng-click="all()"></i>全部</li>
+        <li><i ng-class="['icon iconfont icon-radio','icon iconfont icon-tahz-'][radio]" ng-click="single()"></i>股票</li>
+        <li><i ng-class="['icon iconfont icon-radio','icon iconfont icon-tahz-'][radio]" ng-click="single()"></i>债券</li>
+        <li><i ng-class="['icon iconfont icon-radio','icon iconfont icon-tahz-'][radio]" ng-click="single()"></i>混合</li>
+        <li><i ng-class="['icon iconfont icon-radio','icon iconfont icon-tahz-'][radio]" ng-click="single()"></i>指数</li>
+    </ul>
+    <!--<ul ng-click="hide()" ng-show="flag">
+        <li><i class="icon iconfont icon-tahz-"></i>全部</li>
+        <li><i class="icon iconfont icon-radio"></i>股票</li>
+        <li><i class="icon iconfont icon-radio"></i>债券</li>
+        <li><i class="icon iconfont icon-radio"></i>混合</li>
+        <li><i class="icon iconfont icon-radio"></i>指数</li>
+    </ul>-->
+</div>
+<header class="header head">
+    理财产品
+    <i class="fa fa-list-ul list" ng-click="toggle()"></i>
+</header>
+<section class="section">
+    <nav class="nav">
+        <ul>
+            <li ui-sref-active="pro-on"><a ui-sref="home.creditor.credit">债权产品</a></li>
+            <li ui-sref-active="pro-on"><a ui-sref="home.creditor.fund">优选基金</a></li>
+        </ul>
+    </nav>
+    <div ui-view></div>
+</section>

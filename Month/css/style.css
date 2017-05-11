@@ -1,0 +1,281 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4; }
+
+body {
+  display: flex;
+  -webkit-flex-direction: column;
+  position: relative; }
+
+.black {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: none; }
+
+.nav_content {
+  width: 70%;
+  height: 100%;
+  z-index: 999;
+  background: #ffffff;
+  position: absolute;
+  right: 100%;
+  top: 0; }
+  .nav_content h2 {
+    height: 4.4rem;
+    background: orange;
+    color: #ffffff;
+    line-height: 4.4rem;
+    font-size: 1.8rem;
+    text-align: center; }
+  .nav_content img {
+    padding-left: 2rem;
+    padding-top: 2rem; }
+  .nav_content ul li {
+    height: 3.5rem;
+    border-bottom: 1px solid #CCCCCC;
+    line-height: 3.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: orange;
+    position: relative; }
+    .nav_content ul li span {
+      position: absolute;
+      right: 1rem; }
+
+.header {
+  height: 4.4rem;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 4.4rem;
+  background: #ffffff;
+  position: relative; }
+  .header .menu {
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem; }
+  .header img {
+    width: 2.9rem;
+    height: 2.4rem;
+    padding-top: 1rem; }
+  .header .search {
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem; }
+
+.section {
+  -webkit-flex: 1;
+  overflow: auto; }
+  .section .banner {
+    overflow: hidden; }
+    .section .banner .swiper-wrapper {
+      display: flex;
+      width: 300%; }
+      .section .banner .swiper-wrapper .swiper-slide {
+        width: 100%; }
+        .section .banner .swiper-wrapper .swiper-slide img {
+          width: 100%;
+          height: 11.5rem; }
+  .section .nav {
+    height: 7rem;
+    background: #ffffff;
+    display: flex; }
+    .section .nav dl {
+      -webkit-flex: 1;
+      text-align: center; }
+      .section .nav dl dt img {
+        width: 3rem;
+        height: 2.9rem;
+        padding-top: 1.2rem; }
+      .section .nav dl dd {
+        color: #000000; }
+  .section h2 {
+    height: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 1.5rem; }
+  .section .shop_content {
+    width: 94%;
+    height: 29rem;
+    margin-left: 3%;
+    display: flex; }
+    .section .shop_content .left {
+      width: 65%;
+      height: 29rem; }
+      .section .shop_content .left .top {
+        height: 50%;
+        background: #ffffff;
+        position: relative; }
+        .section .shop_content .left .top img {
+          width: 5.8rem;
+          height: 5.8rem;
+          position: absolute;
+          right: 1.8rem;
+          top: 6rem; }
+        .section .shop_content .left .top p {
+          padding-left: 2rem;
+          padding-top: .6rem; }
+        .section .shop_content .left .top span {
+          position: absolute;
+          bottom: 2rem;
+          left: 2rem;
+          color: red;
+          font-size: 1.4rem;
+          font-weight: bold; }
+      .section .shop_content .left .bottom {
+        height: 50%;
+        background: #adcdda;
+        position: relative; }
+        .section .shop_content .left .bottom img {
+          width: 8rem;
+          height: 9.2rem;
+          position: absolute;
+          right: .5rem;
+          top: 5.2rem; }
+        .section .shop_content .left .bottom p {
+          padding-left: 1.5rem;
+          padding-top: .6rem; }
+        .section .shop_content .left .bottom span {
+          position: absolute;
+          bottom: 2rem;
+          left: 2rem;
+          color: red;
+          font-size: 1.4rem;
+          font-weight: bold; }
+    .section .shop_content .right {
+      width: 35%;
+      height: 29rem;
+      background: #ffde1f;
+      position: relative;
+      text-align: center; }
+      .section .shop_content .right img {
+        width: 8rem;
+        height: 6rem;
+        padding-top: 4.5rem; }
+      .section .shop_content .right h2 {
+        text-align: left;
+        padding-top: 4.8rem; }
+      .section .shop_content .right h3 {
+        padding-bottom: 1.5rem; }
+      .section .shop_content .right p {
+        margin-bottom: 2rem;
+        line-height: .5rem; }
+      .section .shop_content .right span {
+        font-size: 1.4rem;
+        font-weight: bold; }
+  .section .bike {
+    width: 94%;
+    height: 35.5rem;
+    margin-left: 3%;
+    display: flex; }
+    .section .bike .left {
+      width: 49%;
+      height: 35.5rem;
+      margin-right: .5rem; }
+      .section .bike .left .top {
+        height: 49%;
+        margin-bottom: .5rem;
+        background: #ffffff;
+        text-align: center; }
+        .section .bike .left .top img {
+          width: 9rem;
+          height: 5.4rem;
+          padding-top: 3rem; }
+        .section .bike .left .top h2 {
+          font-size: 1.6rem; }
+        .section .bike .left .top p {
+          margin-bottom: 1.5rem; }
+        .section .bike .left .top b {
+          font-size: 1.6rem;
+          color: red; }
+      .section .bike .left .bottom {
+        height: 49%;
+        background: #ffffff;
+        text-align: center; }
+        .section .bike .left .bottom img {
+          width: 9rem;
+          height: 5.4rem;
+          padding-top: 3rem; }
+        .section .bike .left .bottom h2 {
+          font-size: 1.6rem; }
+        .section .bike .left .bottom p {
+          margin-bottom: 1.5rem; }
+        .section .bike .left .bottom b {
+          font-size: 1.6rem;
+          color: red; }
+    .section .bike .right {
+      width: 49%; }
+      .section .bike .right .top {
+        height: 49%;
+        margin-bottom: .5rem;
+        background: #ffffff;
+        text-align: center; }
+        .section .bike .right .top img {
+          width: 9rem;
+          height: 5.4rem;
+          padding-top: 3rem; }
+        .section .bike .right .top h2 {
+          font-size: 1.6rem; }
+        .section .bike .right .top p {
+          margin-bottom: 1.5rem; }
+        .section .bike .right .top b {
+          font-size: 1.6rem;
+          color: red; }
+      .section .bike .right .bottom {
+        height: 49%;
+        background: #ffffff;
+        text-align: center; }
+        .section .bike .right .bottom img {
+          width: 9rem;
+          height: 5.4rem;
+          padding-top: 3rem; }
+        .section .bike .right .bottom h2 {
+          font-size: 1.6rem; }
+        .section .bike .right .bottom p {
+          margin-bottom: 1.5rem; }
+        .section .bike .right .bottom b {
+          font-size: 1.6rem;
+          color: red; }
+  .section .explain {
+    margin-bottom: 1.5rem;
+    display: flex;
+    text-align: center;
+    margin-top: 1.5rem; }
+    .section .explain dl {
+      display: flex;
+      border-right: 1px solid #ccc;
+      width: 45%;
+      margin-left: 5%; }
+      .section .explain dl:nth-child(2) {
+        border-right: none; }
+      .section .explain dl dt img {
+        width: 3rem;
+        height: 3rem; }
+      .section .explain dl dd {
+        padding-left: .8rem; }
+  .section #wrapper {
+    height: 300px;
+    overflow: hidden; }
+
+.footer {
+  height: 4.4rem;
+  background: #ffffff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  text-align: center; }
+  .footer dl {
+    -webkit-flex: 1; }
+    .footer dl dt img {
+      width: 2.3rem;
+      height: 2rem;
+      padding-top: .5rem; }
+    .footer dl:nth-child(1) {
+      color: #fbce03; }
+
+/*# sourceMappingURL=style.css.map */
